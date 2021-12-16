@@ -1,7 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Container } from "reactstrap";
+import init from "./functions/init";
+import LoginDemo from "./components/LoginDemo";
 
 function App() {
+  useEffect(() => {
+    init();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +26,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Container>
+        <LoginDemo />
+      </Container>
     </div>
   );
 }
