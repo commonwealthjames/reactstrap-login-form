@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+.env contains all the AWS Connection Parameters. This needs to at least contain
+
+REACT_APP_REGION=xxxx
+REACT_APP_COGNITO_REGION=xxxx
+REACT_APP_USERPOOLID=xxxx
+REACT_APP_USERPOOLWEBCLIENTID=xxxx
+
 ## Available Scripts
 
 In the project directory, you can run:
