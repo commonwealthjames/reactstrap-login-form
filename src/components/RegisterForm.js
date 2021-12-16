@@ -7,7 +7,7 @@ function RegisterForm({ handleSubmit }) {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleRegister = (event) => {
-    if (password == confirmPassword) {
+    if (password === confirmPassword) {
       event.preventDefault();
       handleSubmit(username, password);
     } else {
